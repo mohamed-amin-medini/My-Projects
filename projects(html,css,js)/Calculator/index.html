@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Simple Calculator App</h1>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display"><input type="text" name="display" /></div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="display.value=''"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="display.value=display.value.toString().slice(0,-1)"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="display.value+='.'"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="display.value+='/'"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="display.value+='7'" />
+            <input type="button" value="8" onclick="display.value+='8'" />
+            <input type="button" value="9" onclick="display.value+='9'" />
+            <input
+              type="button"
+              value="*"
+              onclick="display.value+='*'"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="display.value+='4'" />
+            <input type="button" value="5" onclick="display.value+='5'" />
+            <input type="button" value="6" onclick="display.value+='6'" />
+            <input
+              type="button"
+              value="-"
+              onclick="display.value+='-'"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="display.value+='1'" />
+            <input type="button" value="2" onclick="display.value+='2'" />
+            <input type="button" value="3" onclick="display.value+='3'" />
+            <input
+              type="button"
+              value="+"
+              onclick="display.value+='+'"
+              class="operator"
+            />
+          </div>
+
+          <div>
+            <input type="button" value="00" onclick="display.value+='00'" />
+            <input type="button" value="0" onclick="display.value+='0'" />
+            <input
+              type="button"
+              value="="
+              class="equal operator"
+              onclick="display.value=eval(display.value)"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- ctrl c + ctrl : copy then paste -->
+<!-- ctrl x + ctrl v : cut then paste -->
+<!--ctrl x delete the line of the cursor -->
+<!--ctrl z : come back to the last modification-->
+<!-- shift + alt to put the cursor in more then one line  -->
+<!--ctrl + : : to put a line or multiple lines in a comment-->
+<!-- ctrl + a : select all the code in the document -->
+<!-- ctrl + s : save -->
+<!-- ctrl + shift + +: save as  -->
+<!-- ctrl + o :open file -->
+<!-- ctrl + n : new text file -->
+<!-- ctrl + shift + n : open new window of vscode  -->
+<!-- ctrl + k then ctrl + o : open folder -->
+<!-- ctrl + r : reload file  -->
+<!--ctrl + d : hightlight the next word selected-->

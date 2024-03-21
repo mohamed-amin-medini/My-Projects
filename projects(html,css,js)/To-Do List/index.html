@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <!-- JavaScript's defer attribute is being used to load JavaScript resources 
+      (<script> files) just after HTML document's core content has loaded -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>TO do List <img src="images/icon.png" alt="icon" /></h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="add your task" />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">task1</li>
+          <li>task2</li>
+          <li>task3</li> -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- to do list app using the local storage -->
